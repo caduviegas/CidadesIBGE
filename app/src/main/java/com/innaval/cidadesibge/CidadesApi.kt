@@ -7,5 +7,5 @@ interface CidadesApi {
 
 
     @GET("localidades/distritos")
-    fun getCidades(): Single<RespostaCidade>
+    fun getCidades(): Single<List<RespostaCidade>>
 }

@@ -7,5 +7,5 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class RespostaCidade(
-    @SerializedName("municipio") val municipio: List<Cidade>
+    @SerializedName("municipio") val municipio: Cidade
 ):Parcelable

@@ -11,16 +11,16 @@ class ResultadosActivity: AppCompatActivity() {
 
     private lateinit var textViewResultado: TextView
 
-    private val sucesso:(RespostaCidade) -> Unit = {respostaCidade ->
-    respostaCidade.municipio.get(0).nome
+    private val sucesso:(List<RespostaCidade>) -> Unit = {respostaCidades ->
+    respostaCidades.get(0).municipio.nome
 
-    val um = respostaCidade.municipio.get(0).nome.get(0)
-    val dois = respostaCidade.municipio.get(0).nome.get(1)
-    val tres = respostaCidade.municipio.get(0).nome.get(2)
-    val quatro = respostaCidade.municipio.get(0).nome.get(3)
-    val cinco = respostaCidade.municipio.get(0).nome.get(4)
-    val seis = respostaCidade.municipio.get(0).nome.get(5)
-    val sete = respostaCidade.municipio.get(0).nome.get(6)
+    val um = respostaCidades.get(0).municipio.nome
+    val dois = respostaCidades.get(1).municipio.nome
+    val tres = respostaCidades.get(2).municipio.nome
+    val quatro = respostaCidades.get(3).municipio.nome
+    val cinco = respostaCidades.get(4).municipio.nome
+    val seis = respostaCidades.get(5).municipio.nome
+    val sete = respostaCidades.get(6).municipio.nome
 
     textViewResultado.text = "${um} ${dois} ${tres} ${quatro} ${cinco} ${seis} ${sete}"
     }
